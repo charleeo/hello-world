@@ -10,7 +10,11 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - print_pipeline_id
+      - print_pipeline_d
+    - run:
+        name: on error
+        command: Hello Error
+        when: on_fail
 
 workflows:
   command_workflow:
