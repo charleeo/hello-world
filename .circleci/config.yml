@@ -13,6 +13,6 @@ jobs:
       - print_pipeline_id
 
 workflows:
-  my_workflow:
+  command_workflow:
     jobs:
       - my_job
